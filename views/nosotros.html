@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Fabrica de Muebles Maciel</title>
+<meta charset="UTF-8">
+<link rel="icon" href="../imagenes/Fabrica de muebles Maciel logo isotipo.png">
+<link rel="stylesheet" type="text/css" href="../css/style.css" > 
+</head>
+<header class="main_header">
+    <div class="logo">
+        <img class="img_logo" src="../imagenes/Fabrica de muebles Maciel.png" alt="Carpinteria maciel logo">
+    </div>
+    <nav class="navegacion">
+        <ul class="menu">
+            <li class="lista">
+                <a class="lista__link" href="../index.html">
+                    <span class="icono_menu">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="texto_menu">Inicio</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a class="lista__link" href="./galeria.html">
+                    <span class="icono_menu">
+                        <ion-icon name="camera-outline"></ion-icon>
+                    </span>
+                    <span class="texto_menu">Galeria</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a class="lista__link" href="./destacados.html">
+                    <span class="icono_menu">
+                        <ion-icon name="pricetag-outline"></ion-icon>
+                    </span>
+                    <span class="texto_menu">Destacados</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a class="lista__link" href="./contacto.html">
+                    <span class="icono_menu">
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+                    </span>
+                    <span class="texto_menu">Contacto</span>
+                </a>
+            </li>
+            <li class="lista activo">
+                <a class="lista__link" href="./nosotros.html">
+                    <span class="icono_menu">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="texto_menu">Nosotros</span>
+                </a>
+            </li>
+            <div class="indicador"></div>
+        </ul>
+    </nav>
+</header>
+<body>
+    <main class="main">
+        <section class="main_section">
+            <div class="main_nosotros">
+                <div class="div__main_nosotros">
+                    <div class="texto_1">
+
+                        <h1 class="titulo1">Nosotros</h1>
+                        <p class="descripcion__nosotros">Desde hace mas de 40 años, nos dedicamos al trabajo de dar forma a la madera, para construir muebles duraderos. Carpinteria fina, de obra o muebleria, con el uso de materiales de alta calidad para brindar gran comodidad y durabilidad de los productos.</p>
+                    </div>
+                    <div class="texto_2">
+                        <h2 class="titulo2">Opciones de servicio</h2>
+                        <ul class="ul__main_nosotros">
+                            <li class="lista__nosotros"></li>
+                                <span class="texto__contacto">presupuesto sin cargo</span>
+                            </li>
+                            <li class="lista__nosotros">
+                                <span class="texto__contacto">entrega a domicilio</span>
+                            </li>
+                            <li class="lista__nosotros">
+                                <span class="texto__contacto">armado dersarmado de muebles</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="texto_3">
+
+                        <h2 class="titulo3">Ofertas</h2>
+                        <ul class="ul__main_nosotros2">
+                            <li class="lista__nosotros">
+                                <span class="texto__contacto">Servicio de reparacion</span>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <script>
+        const list = document.querySelectorAll('.lista');
+        function activeLink(){
+            list.forEach((item) => 
+            item.classList.remove('activo'));
+            this.classList.add('activo');  
+        }
+        list.forEach((item) => 
+        item.addEventListener ('click',activeLink));
+    </script>
+
+    <footer>
+        <p>Author: Edy Maciel </p>
+    </footer>
+</body>
+</html>

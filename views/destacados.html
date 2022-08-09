@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Fabrica de Muebles Maciel</title>
+<meta charset="UTF-8">
+<link rel="icon" href="../imagenes/Fabrica de muebles Maciel logo isotipo.png">
+<link rel="stylesheet" type="text/css" href="../css/style.css" > 
+</head>
+<header class="main_header">
+    <div class="logo">
+        <img class="img_logo" src="../imagenes/Fabrica de muebles Maciel.png" alt="Carpinteria maciel logo">
+    </div>
+    <nav class="navegacion">
+        <ul class="menu">
+            <li class="lista">
+                <a class="lista__link" href="../index.html">
+                    <span class="icono_menu">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="texto_menu">Inicio</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a class="lista__link" href="./galeria.html">
+                    <span class="icono_menu">
+                        <ion-icon name="camera-outline"></ion-icon>
+                    </span>
+                    <span class="texto_menu">Galeria</span>
+                </a>
+            </li>
+            <li class="lista activo">
+                <a class="lista__link" href="./destacados.html">
+                    <span class="icono_menu">
+                        <ion-icon name="pricetag-outline"></ion-icon>
+                    </span>
+                    <span class="texto_menu">Destacados</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a class="lista__link" href="./contacto.html">
+                    <span class="icono_menu">
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+                    </span>
+                    <span class="texto_menu">Contacto</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a class="lista__link" href="./nosotros.html">
+                    <span class="icono_menu">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="texto_menu">Nosotros</span>
+                </a>
+            </li>
+            <div class="indicador"></div>
+        </ul>
+    </nav>
+</header>
+<body>    
+    <main class="main">
+        <section class="main_section">
+            <section class="seccion_imagen1">
+                <div class="div_seccion1">
+                    <img class="img__seccion1" src="../imagenes/bacha de banio.jpeg" alt="bacha de banio">
+                    <p class="p__seccion1">Bacha de baño, colores a eleccion. Varios modelos
+                    </p>
+                </div>
+            </section>
+            <section class="seccion_imagen2">
+                <div class="div_seccion2">
+                    <img class="img__seccion2" src="../imagenes/placard3.jpeg" alt="bacha de banio">
+                    <p class="p__seccion2">Placard 8 puertas, cajones, 2.40 x 2.0 metros</p>
+                </div>
+            </section>
+            <section class="seccion_imagen3">
+                <div class="div_seccion3">
+                    <img class="img__seccion3" src="../imagenes/mueble3.jpeg" alt="bacha de banio">
+                    <p class="p__seccion3">Modular en pino lioti</p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        const list = document.querySelectorAll('.lista');
+        function activeLink(){
+            list.forEach((item) => 
+            item.classList.remove('activo'));
+            this.classList.add('activo');  
+        }
+        list.forEach((item) => 
+        item.addEventListener ('click',activeLink));
+    </script>
+    
+    
+    <footer>
+        <p>Author: Edy Maciel </p>
+    </footer>
+</body>
+</html>

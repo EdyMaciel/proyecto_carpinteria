@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Fabrica de Muebles Maciel</title>
+<meta charset="UTF-8">
+<link rel="icon" href="../imagenes/Fabrica de muebles Maciel logo isotipo.png">
+<link rel="stylesheet" type="text/css" href="../css/style.css" > 
+</head>
+<header class="main_header">
+    <div class="logo">
+        <img class="img_logo" src="../imagenes/Fabrica de muebles Maciel.png" alt="Carpinteria maciel logo">
+    </div>
+    <nav class="navegacion">
+        <ul class="menu">
+            <li class="lista">
+                <a class="lista__link" href="../index.html">
+                    <span class="icono_menu">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="texto_menu">Inicio</span>
+                </a>
+            </li>
+            <li class="lista activo">
+                <a class="lista__link" href="./galeria.html">
+                    <span class="icono_menu">
+                        <ion-icon name="camera-outline"></ion-icon>
+                    </span>
+                    <span class="texto_menu">Galeria</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a class="lista__link" href="./destacados.html">
+                    <span class="icono_menu">
+                        <ion-icon name="pricetag-outline"></ion-icon>
+                    </span>
+                    <span class="texto_menu">Destacados</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a class="lista__link" href="./contacto.html">
+                    <span class="icono_menu">
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+                    </span>
+                    <span class="texto_menu">Contacto</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a class="lista__link" href="./nosotros.html">
+                    <span class="icono_menu">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="texto_menu">Nosotros</span>
+                </a>
+            </li>
+            <div class="indicador"></div>
+        </ul>
+    </nav>
+</header>
+<body>
+    <main class="main">
+        <section class="main_section">
+            <div class="img_Galeria">
+                <img class="img" src="../imagenes/bacha de banio.jpeg" alt="bacha de banio">
+                <img class="img" src="../imagenes/cucheta 2.jpeg" alt="cucheta 2">
+                <img class="img" src="../imagenes/cucheta.jpeg" alt="cucheta">
+                <img class="img" src="../imagenes/juego de comedor.jpeg" alt="juego de comedor">
+                <img class="img" src="../imagenes/mesada.jpeg" alt="mesada">
+                <img class="img" src="../imagenes/mesada2.jpeg" alt="mesada2">
+                <img class="img" src="../imagenes/mueble1.jpeg" alt="mueble1">
+                <img class="img" src="../imagenes/mueble2.jpeg" alt="mueble2">
+                <img class="img" src="../imagenes/mueble3.jpeg" alt="mueble3">
+                <img class="img" src="../imagenes/mueble4.jpeg" alt="mueble4">
+                <img class="img" src="../imagenes/placard de dormitorio.jpeg" alt="placard de dormitorio">
+                <img class="img" src="../imagenes/placard.jpeg" alt="placard" >
+                <img class="img" src="../imagenes/placard2.jpeg" alt="placard2">
+                <img class="img" src="../imagenes/placard3.jpeg" alt="placard3">
+                
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <script>
+        const list = document.querySelectorAll('.lista');
+        function activeLink(){
+            list.forEach((item) => 
+            item.classList.remove('activo'));
+            this.classList.add('activo');  
+        }
+        list.forEach((item) => 
+        item.addEventListener ('click',activeLink));
+    </script>
+    
+    <footer>
+        <p>Author: Edy Maciel </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Fabrica de Muebles Maciel</title>
+<meta charset="UTF-8">
+<link rel="icon" href="./imagenes/Fabrica de muebles Maciel logo isotipo.png">
+<link rel="stylesheet" type="text/css" href="./css/style.css"  > 
+</head>
+<header class="main_header">
+    <div class="logo">
+        <img class="img_logo" src="./imagenes/Fabrica de muebles Maciel.png" alt="Carpinteria maciel logo">
+    </div>
+    <nav class="navegacion">
+        <ul class="menu">
+            <li class="lista activo">
+                <a class="lista__link" href="./index.html">
+                    <span class="icono_menu">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="texto_menu">Inicio</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a class="lista__link" href="./views/galeria.html">
+                    <span class="icono_menu">
+                        <ion-icon name="camera-outline"></ion-icon>
+                    </span>
+                    <span class="texto_menu">Galeria</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a class="lista__link" href="./views/destacados.html">
+                    <span class="icono_menu">
+                        <ion-icon name="pricetag-outline"></ion-icon>
+                    </span>
+                    <span class="texto_menu">Destacados</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a class="lista__link" href="./views/contacto.html">
+                    <span class="icono_menu">
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+                    </span>
+                    <span class="texto_menu">Contacto</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a class="lista__link" href="./views/nosotros.html">
+                    <span class="icono_menu">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="texto_menu">Nosotros</span>
+                </a>
+            </li>
+            <div class="indicador"></div>
+        </ul>
+    </nav>
+</header>
+<body>
+    <main class="main">
+        <section class="main_section">
+            <div >
+                <img class="img_inicio" src="./imagenes/cucheta.jpeg" alt="">
+            </div>
+            <div class="slider">
+                <div class="slider_div">
+                    <input class="slider_div__input" type="radio" id="slide-1" 
+                          name="slide" aria-hidden="true" hidden="" checked="checked">
+                    <div class="slider_img">
+                        <img class="img_slider" src="./imagenes/mesada2.jpeg">
+                    </div>
+                    <input class="slider_div__input" type="radio" id="slide-2" 
+                          name="slide" aria-hidden="true" hidden="">
+                    <div class="slider_img">
+                        <img class="img_slider" src="./imagenes/juego de comedor.jpeg">
+                    </div>
+                    <input class="slider_div__input" type="radio" id="slide-3" 
+                          name="slide" aria-hidden="true" hidden="">
+                    <div class="slider_img">
+                        <img class="img_slider" src="./imagenes/mesada.jpeg">
+                    </div>
+                    <label for="slide-3" class="slider-control prev control-1">‹</label>
+                    <label for="slide-2" class="slider-control next control-1">›</label>
+                    <label for="slide-1" class="slider-control prev control-2">‹</label>
+                    <label for="slide-3" class="slider-control next control-2">›</label>
+                    <label for="slide-2" class="slider-control prev control-3">‹</label>
+                    <label for="slide-1" class="slider-control next control-3">›</label>
+                    <ol class="slider-indicador">
+                        <li>
+                            <label for="slide-1" class="slider-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-2" class="slider-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-3" class="slider-circulo">•</label>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="contacto_inicio">
+                <div class="img_logo__contacto">
+                    <img class="img_logo__img" src="./imagenes/Fabrica de muebles Maciel.png" alt="Carpinteria maciel logo">
+                </div>
+                <p class="info_cotacto_inicio"> Desde hace mas de 40 años, nos dedicamos al trabajo de dar forma a la madera, para construir muebles duraderos. Carpinteria fina, de obra o muebleria, con el uso de materiales de alta calidad para brindar gran comodidad y durabilidad de los productos.
+                </p>
+                <div class="div__contacto_inicio">
+                    <ul class="ul__contacto_inicio">
+                        <li class="lista_contacto">
+                            <span class="icono_menu__contacto">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </span>
+                            <a href="https://mail.google.com/mail/u/1/#inbox">
+                                <span class="texto_menu__contacto">enriquelcarpintero@hotmail.com</span>
+                            </a>
+                        </li>
+                        <li class="lista_contacto">
+                            <span class="icono_menu__contacto">
+                                <ion-icon name="call-outline"></ion-icon>
+                            </span>
+                            <span class="texto_menu__contacto">23570014</span>
+                        </li>
+                        <li class="lista_contacto">
+                            <span class="icono_menu__contacto">
+                                <ion-icon name="map-outline"></ion-icon>
+                            </span>
+                            <a href="https://www.google.com.uy/maps/place/Dr.+Jos%C3%A9+Mar%C3%ADa+Silva+4012,+12300+Montevideo,+Departamento+de+Montevideo/@-34.8411339,-56.1893505,17z/data=!3m1!4b1!4m5!3m4!1s0x95a02ac6a95a3573:0x7c633f8ce3aa2c00!8m2!3d-34.8411383!4d-56.1871618?hl=es-419">
+                                <span class="texto_menu__contacto">Jose Maria Silva 4012</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div >
+                <img class="img_inicio" src="./imagenes/bacha de banio.jpeg" alt="">
+            </div>
+
+        </section>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        const list = document.querySelectorAll('.lista');
+        function activeLink(){
+            list.forEach((item) => 
+            item.classList.remove('activo'));
+            this.classList.add('activo');  
+        }
+        list.forEach((item) => 
+        item.addEventListener ('click',activeLink));
+    </script>
+    
+    <footer>
+        <nav>
+            <p>Author: Edy Maciel </p>
+        </nav>
+        
+    </footer>
+</body>
+
+
+
+</html>
