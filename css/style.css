@@ -23,12 +23,8 @@ header{
     align-items: center;
   
     background-color: var(--clr);
-    /* background-image: url(https://img.freepik.com/fotos-premium/carpintero-trabajando-equipos-mesa-madera-tienda-carpinteria-mujer-trabaja-taller-carpinteria_1418-2502.jpg?w=2000); */
 }
-/* .container{
-    margin: 0 auto;
-    max-width: 1200px;
-} */
+
 .navegacion{
     position: relative;
     width: 400px;
@@ -45,6 +41,13 @@ header{
     display: flex;
     width: 350px;
     
+}
+dl, ol, ul {
+    margin-top: 0; 
+    margin-bottom: 0rem; 
+}
+ol, ul {
+    padding-left: 0rem;
 }
 .lista{
     position: relative;
@@ -84,8 +87,9 @@ header{
     color: black;  
 }
 
-.activo .icono_menu{
+.menu .activo .icono_menu{
     transform: translateY(-32px);
+
 }
 
 .activo .texto_menu{
@@ -167,14 +171,13 @@ body{
     align-items: center;
     min-height: 90vh;
     background-color: var(--clr);
-  
 }
 .main{
     min-height: 100vh;
     max-width: 100%;
 }
 .main_section{
-    max-width: 60vw;
+    max-width: 70vw;
     margin: 0 auto;
 }
 .div__img_inicio{
@@ -318,6 +321,7 @@ body{
     max-width: 100%;
     font-size: 16px;
     font-weight: 500;
+    list-style: none;
 }
 .info_cotacto_inicio{
     color: #fff;
@@ -485,6 +489,7 @@ body{
 .foro_form{
     grid-column: 2;
     margin-top: 5vh;
+    max-width: 240px;
 }
 .div__contacto_contacto{
     margin-top: 10vh;
@@ -506,7 +511,8 @@ body{
 }
 .texto__contacto{
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
 }
 .mapa_contacto{
     margin-right: 10px;
@@ -516,10 +522,8 @@ body{
 
 /* Nosotros */
 .main_nosotros{
-    align-items: center;
     text-align: center;
     max-width: 50vw;
-    margin-left: 4vw;
     margin: 0 auto;
 }
 .div__main_nosotros{
