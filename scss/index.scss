@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+
+  /* MISC */  
+
+@import './misc/variables';
+@import './misc/normalize';
+
+/*PARTIALS*/
+
+@import './partials/header';
+@import './partials/footer';
+
+/*VIEWS*/
+
+@import './views/index';
+@import './views/galeria';
+@import './views/destacados';
+@import './views/nosotros';
+@import './views/contacto';

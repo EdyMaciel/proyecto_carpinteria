@@ -1,0 +1,42 @@
+/* Contacto */
+.foro{
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 1fr;
+    color: #fff;
+    max-width: 100%;
+    min-height: 50vh;
+    font-size: 16px;
+    font-weight: 500;
+    .foro_form{
+        grid-column: 2;
+        margin-top: 5vh;
+        max-width: 240px;
+    }
+}
+.div__contacto_contacto{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: grid;
+    grid-template-columns: 4fr .5fr 3fr;
+    .ul__contacto_contacto{
+        grid-column: 1;
+        font-weight: 500;
+        font-size: 20px;
+        margin: 0 auto;
+    }
+    .lista__contacto{
+        list-style: none;
+    }
+    .icono__contacto{
+        color: #fff;
+    }
+    .texto__contacto{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .mapa_contacto{
+        margin-right: 10px;
+        grid-column: 3;
+    }
+}

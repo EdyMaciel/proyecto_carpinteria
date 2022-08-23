@@ -1,0 +1,31 @@
+{
+  "name": "proyecto_carpinteria",
+  "version": "1.0.0",
+  "description": "Proyecto para coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/index.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdyMaciel/proyecto_carpinteria.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "SASS",
+    "BOOTSTRAP"
+  ],
+  "author": "Edy Maciel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdyMaciel/proyecto_carpinteria/issues"
+  },
+  "homepage": "https://github.com/EdyMaciel/proyecto_carpinteria#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
