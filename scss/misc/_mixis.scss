@@ -1,0 +1,10 @@
+@mixin flex($dis, $jc, $ai, $gap, $gcgap, $grgap){
+    display: $dis;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gap;
+    grid-column-gap: $gcgap;
+    grid-row-gap:$grgap ;
+}
+
+

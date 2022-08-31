@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<title>Fabrica de Muebles Maciel</title>
+<title>Fabrica de Muebles Maciel | CONTACTO</title>
 <meta charset="UTF-8">
+<meta name="keywords" content="CARPINTERIA, MUEBLES, PLACARD, ROPERO, JUEGO DE COMEDOR, BACHA DE BAÑO, SILLAS, SILLA, REPARACION DE MUEBLES, BAJO MESADA, ESCRITORIOS, CUCHETAS, CAMAS, PUERTAS DE INTERIOR, PUERTAS, PUERTAS DE EXTERIOR, ">
+<meta name="description" content="fabrica de muebles con mas de 40 años de experiencia en el campo, llevando a cabo reparaciones y muebles a medida">
 <link rel="icon" href="../imagenes/Fabrica de muebles Maciel logo isotipo.png">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="../css/style.css" > 
 </head>
 <header class="main_header">
     <div class="logo">
-        <img class="img_logo" src="../imagenes/Fabrica de muebles Maciel.png" alt="Carpinteria maciel logo">
+        <a href="../index.html">
+            <img class="img_logo" src="../imagenes/Fabrica de muebles Maciel.png" alt="Carpinteria maciel logo">
+        </a>
     </div>
     <nav class="navegacion">
         <ul class="menu">
@@ -60,6 +64,7 @@
 <body>
     <main class="container">
         <section class="main_section">
+            <h1>CONTACTO</h1>
             <section class="foro">
                 <form class="foro_form" action="" method="" enctype="">
                     <label for="nombre">Nombre:</label>
@@ -99,15 +104,27 @@
                         <span class="texto__contacto">Jose Maria Silva 4012</span>
                         </a>
                     </li>
+                    <li class="lista__contacto">
+                        <span class="icono__contacto">
+                            <ion-icon name="information-circle-outline"></ion-icon>
+                        </span>
+                        <a href="./mapa_nav.html">
+                            <span class="texto__contacto">Mapa del sitio</span>   
+                        </a>
+                    </li>
                 </ul>
                 <iframe class="mapa_contacto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.60057550092!2d-56.189350484143624!3d-34.84113387760685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a02ac6a95a3573%3A0x7c633f8ce3aa2c00!2sDr.%20Jos%C3%A9%20Mar%C3%ADa%20Silva%204012%2C%2012300%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1658708945432!5m2!1ses-419!2suy" width="500vw" height="400vh" style="border:2px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     </main>
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     
+    <footer>
+        <p>Author: Edy Maciel </p>
+    </footer>
+    
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
     <script>
         const list = document.querySelectorAll('.lista');
         function activeLink(){
@@ -118,9 +135,5 @@
         list.forEach((item) => 
         item.addEventListener ('click',activeLink));
     </script>
-
-    <footer>
-        <p>Author: Edy Maciel </p>
-    </footer>
 </body>
 </html>
