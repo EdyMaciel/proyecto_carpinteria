@@ -1,0 +1,5 @@
+keywords: CARPINTERIA, MUEBLES, PLACARD, ROPERO, JUEGO DE COMEDOR, BACHA DE BAÑO, SILLAS, SILLA, REPARACION DE MUEBLES, BAJO MESADA, ESCRITORIOS, CUCHETAS, CAMAS, PUERTAS DE INTERIOR, PUERTAS, PUERTAS DE EXTERIOR
+
+descripcion: fabrica de muebles con mas de 40 años de experiencia en el campo, llevando a cabo reparaciones y muebles a medida
+
+modificacion de las fariables en los scss
