@@ -5,25 +5,30 @@
     margin: 0 auto;
     .div__main_nosotros{
         display: grid;
-        grid-template-rows: 100vh 100vh 100vh;
+        margin-top: 20vh;
+        grid-template-rows: 60vh 60vh 60vh;
         align-items: center;
-        
+
         .titulo1{
             color: #fff;
             font-size: 48px;
+            align-self: center;
         }
         .descripcion__nosotros{
-        
+            text-align: center;
             margin-bottom: 5vh;
             font-weight: 500;
             font-size: 20px;
             color: #fff;
         }
+
+        
         
         .titulo2{
             grid-row: 2;
             font-size: 36px;
             color: #fff;
+            align-self: center;
         }
         
         .ul__main_nosotros{
@@ -32,12 +37,15 @@
             font-weight: 500;
             margin-bottom: 5vh;
             color: #fff; 
+            text-align: center;
+            padding-left: 0rem;
         }
         
         .titulo3{
             grid-row: 3;
             font-size: 36px;
             color: #fff;
+            align-self: center;
         }
         
         .ul__main_nosotros2{
@@ -45,7 +53,8 @@
             list-style:none;
             font-weight: 500;
             color: #fff; 
-            
+            text-align: center;
+            padding-left: 0rem;
         }
     }
 }
