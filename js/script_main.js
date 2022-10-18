@@ -26,7 +26,7 @@ function validacion(nom, asunto, email, msg){
         alert("Error al completar los datos")
         return false;
 
-    }else if(nom === null || asunto === "" || email === null || msg === null ){
+    }else if(nom === null || asunto === null || email === null || msg === null ){
         alert("Error al completar los datos")
         return false;
 
