@@ -39,17 +39,31 @@ h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 500; }
 
+h4 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300; }
+
 @media (max-width: 2560px) {
   .contacto_inicio {
-    grid-template-columns: 300px 5fr 3fr; } }
+    grid-template-columns: 300px 5fr 3fr; }
+  .container {
+    max-width: 100%;
+    min-height: 90vh; } }
 
 @media (max-width: 1440px) {
   .contacto_inicio {
-    grid-template-columns: 200px 5fr 3fr; } }
+    grid-template-columns: 200px 5fr 3fr; }
+  .container {
+    max-width: 100%;
+    min-height: 90vh; } }
 
 @media (max-width: 1220px) {
   .contacto_inicio {
-    grid-template-columns: 150px 5fr 3fr; } }
+    grid-template-columns: 150px 5fr 3fr; }
+  .container {
+    max-width: 100%;
+    min-height: 90vh; } }
 
 @media (max-width: 1024px) {
   h1 {
@@ -57,7 +71,8 @@ h3 {
   .contacto_inicio {
     grid-template-columns: 100px 5fr 3fr; }
   .container {
-    max-width: 100%; }
+    max-width: 100%;
+    min-height: 90vh; }
   .main_section {
     max-width: 100%;
     margin: 10px; }
@@ -391,81 +406,21 @@ li:nth-child(3) .slide-circulo {
       max-height: 100%; }
 
 /* Destacados */
-.seccion_imagen1 {
+.prod_destacados {
+  color: black;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 0; }
+
+.d-flex {
+  color: white;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center; }
+
+.seccion_destacados {
   justify-items: center;
   margin-top: 10vh; }
-  .seccion_imagen1 .div_seccion1 {
-    max-width: 60%;
-    margin: 0 auto; }
-  .seccion_imagen1 .img__seccion1 {
-    justify-self: stretch;
-    justify-self: center;
-    margin-left: 5%;
-    max-width: 90%;
-    transition: 2s; }
-  .seccion_imagen1 .img__seccion1:hover {
-    margin-left: 0%;
-    max-width: 100%; }
-  .seccion_imagen1 .p__seccion1 {
-    color: #fff;
-    font-size: 1.3rem;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 10px;
-    justify-self: center;
-    text-align: center;
-    max-width: 100%;
-    display: block; }
-
-.seccion_imagen2 {
-  justify-items: center;
-  margin-top: 10vh; }
-  .seccion_imagen2 .div_seccion2 {
-    max-width: 60%;
-    margin: 0 auto; }
-  .seccion_imagen2 .img__seccion2 {
-    justify-self: stretch;
-    justify-self: center;
-    margin-left: 5%;
-    max-width: 90%;
-    transition: 2s; }
-  .seccion_imagen2 .img__seccion2:hover {
-    margin-left: 0%;
-    max-width: 100%; }
-  .seccion_imagen2 .p__seccion2 {
-    color: #fff;
-    font-size: 1.3rem;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 10px;
-    justify-self: center;
-    text-align: center;
-    max-width: 100%;
-    display: block; }
-
-.seccion_imagen3 {
-  justify-items: center;
-  margin-top: 10vh;
-  margin-bottom: 10vh; }
-  .seccion_imagen3 .div_seccion3 {
-    max-width: 60%;
-    margin: 0 auto; }
-  .seccion_imagen3 .img__seccion3 {
-    justify-self: stretch;
-    justify-self: center;
-    margin-left: 5%;
-    max-width: 90%;
-    transition: 2s; }
-  .seccion_imagen3 .img__seccion3:hover {
-    margin-left: 0%;
-    max-width: 100%; }
-  .seccion_imagen3 .p__seccion3 {
-    color: #fff;
-    font-size: 1.3rem;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 10px;
-    justify-self: center;
-    text-align: center;
-    max-width: 100%;
-    display: block; }
 
 /* Nosotros */
 .main_nosotros {
@@ -524,8 +479,8 @@ li:nth-child(3) .slide-circulo {
     width: 72px;
     font-weight: bold;
     display: inline-block; }
-  .foro_form input[type="text"],
-  .foro_form input[type="email"] {
+  .foro_form input,
+  .foro_form input {
     width: 180px;
     padding: 3px 10px;
     border: 1px solid #f6f6f6;
@@ -533,7 +488,7 @@ li:nth-child(3) .slide-circulo {
     background-color: #f6f6f6;
     margin: 8px 0;
     display: inline-block; }
-  .foro_form input[type="submit"] {
+  .foro_form .btn_Contacto {
     width: 100%;
     padding: 8px 16px;
     margin-top: 32px;

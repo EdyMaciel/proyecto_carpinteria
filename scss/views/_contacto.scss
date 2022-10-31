@@ -10,8 +10,8 @@
         font-weight:bold;
         display:inline-block;
     }
-    & input[type="text"],
-    & input[type="email"]{
+    & input,
+    & input{
         width:180px;
         padding:3px 10px;
         border:1px solid #f6f6f6;
@@ -21,7 +21,7 @@
         display:inline-block;
     }
     
-    & input[type="submit"]{
+    .btn_Contacto{
         width:100%;
         padding:8px 16px;
         margin-top:32px;
