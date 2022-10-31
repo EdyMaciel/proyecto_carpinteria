@@ -48,21 +48,21 @@ h4 {
   .contacto_inicio {
     grid-template-columns: 300px 5fr 3fr; }
   .container {
-    max-width: 80%;
+    max-width: 70%;
     min-height: 90vh; } }
 
 @media (max-width: 1440px) {
   .contacto_inicio {
     grid-template-columns: 200px 5fr 3fr; }
   .container {
-    max-width: 80%;
+    max-width: 70%;
     min-height: 90vh; } }
 
 @media (max-width: 1220px) {
   .contacto_inicio {
     grid-template-columns: 150px 5fr 3fr; }
   .container {
-    max-width: 80%;
+    max-width: 70%;
     min-height: 90vh; } }
 
 @media (max-width: 1024px) {
