@@ -18,6 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
       }).showToast()
       
     }
+console.log(nom)
+    function validar_email(email){
+      var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      return regex.test(email) ? true : false;
+      
+    }
 
     function validacion(nom, asunto, email, msg){
       if(nom == " " || asunto == " " || email == " " || msg == " " ){
@@ -39,15 +45,28 @@ document.addEventListener('DOMContentLoaded', () => {
         }).showToast();
         return false;
       }else if(nom === null || asunto === null || email === null || msg === null ){
-          Toastify({
-            text:"Error al enviar",
+        Toastify({
+          text:"Error al enviar",
+          duration: 2000,
+          gravity:"bottom",
+          position:"right",
+          className: 'notificacion my-toast'
+        }).showToast();
+          return false;
+
+      }else if(validar_email(email) == false){
+          
+        Toastify({
+            text:"Error al ingresar el correo electronico",
             duration: 2000,
             gravity:"bottom",
             position:"right",
             className: 'notificacion my-toast'
-          }).showToast();
+        }).showToast();
           return false;
-  
+        
+        
+        
       }else{
          return true;
   

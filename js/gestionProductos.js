@@ -7,9 +7,9 @@ class GestionarProductos {
 
             {
                 "id": 1,
-                "nombre": "Mesada",
-                "descripcion": "cosas de mesada",
-                "precio": 8858,
+                "nombre": "Bajo Mesada",
+                "descripcion": "Mesada en madera finger, colores a eleccion.",
+                "precio": 37000,
                 "stock": 50,
                 "img": "mesada.jpeg",
                 "destacado": 1
@@ -17,8 +17,8 @@ class GestionarProductos {
             {
                 "id": 2,
                 "nombre": "Bacha de baño",
-                "descripcion": "cosas de la bacha",
-                "precio": 10907,
+                "descripcion": "Bacha de baño colgante",
+                "precio": 10500,
                 "stock": 5,
                 "img": "bacha_de_banio.jpeg",
                 "destacado": 1
@@ -27,10 +27,20 @@ class GestionarProductos {
             {
                 "id": 3,
                 "nombre": "Placard grande",
-                "descripcion": "cosas de placard grande",
-                "precio": 8858,
+                "descripcion": "Placard 8 puertas y 2 cajones, color a eleccion",
+                "precio": 35000,
                 "stock": 50,
                 "img": "placard3.jpeg",
+                "destacado": 1
+            },
+
+            {
+                "id": 4,
+                "nombre": "cocina",
+                "descripcion": "Cocina a medida, color a eleccion, con tubo de luz bajo alacena",
+                "precio": 50000,
+                "stock": 50,
+                "img": "cocina.jpeg",
                 "destacado": 1
             }
 
