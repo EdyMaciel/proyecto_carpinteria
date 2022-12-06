@@ -1,25 +1,17 @@
 import { useState } from 'react'
 import './App.css'
+import Nav from './components/navBar/NavBar'
+import ItemListContainer from './components/ItemListContainer'
 
 function App() {
   const [count, setCount] = useState(0)
 
-
-  
-  const ItemListContainer = () => {
-    console.log("hola esto es container")
-    return (
-      <div >
-        Greeting
-      </div>
-    )
-  }
-  
- 
   return (
-   <div class="container d-flex  align-items-center justify-content-center">
-    <ItemListContainer />
-   </div>
+    
+  <>
+  <Nav />
+  <ItemListContainer texto="Hola Mundo" />
+  </>
   )
 }
 
