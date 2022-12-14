@@ -1,7 +1,8 @@
 const Titulo = ( { nombre } ) => {
  
     return (
-        <h2>{nombre}</h2>
+        <p style={{ display: "block", color: "white", textAlign: "center"}}>{nombre}</p>
+        
       )
   
 }
