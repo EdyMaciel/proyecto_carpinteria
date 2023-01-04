@@ -115,3 +115,7 @@ ol, ul {
   margin-left: 50px;
 
 }
+#BodyId{
+  min-height: 100vh;
+  min-width: 100vw;
+}

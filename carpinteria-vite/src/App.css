@@ -54,9 +54,23 @@
     text-align: center;
     font-size: 10px;
   }
+  .img{
+    width: 100px;
+    height: 90px;
+  }
 }
 .card {
   padding: 2em;
+}
+.card-header{
+  text-align: center;
+}
+.card-body{
+  text-align: center;
+  margin: 0 auto;
+}
+.card-footer{
+  margin: 0 auto;
 }
 
 .read-the-docs {
@@ -68,4 +82,19 @@ img{
 }
 p{
   margin-bottom: 0rem;
+}
+#CardsId{
+  margin: 0 auto;
+}
+
+.bi-cart{
+  color: white;
+}
+
+#contadorId{
+   color: white;
+   font-size: 18px;
+}
+.imgDetalle{
+  width: 20rem;
 }

@@ -1,32 +1,31 @@
 import { useState } from "react"
 
-const ItemCount = () => {
-    const [contador, setContador] = useState(0)
+const ItemCount = ( { stock=5, inicial=1, onAdd } ) => {
+    const [contador, setContador] = useState(1)
   
   
-    const resCount = () => {
-      setContador(contador - 1)
-    }
-    const sumCount = () => {
-      setContador(contador + 1)
-    }
+    const resCount = () => {if(contador > inicial) setContador(contador - 1)}
+
+    const sumCount = () => {if (contador < stock) setContador(contador + 1)}
   
+    const handleOnAdd = () => onAdd(contador)
+
     return(
-     <div>
+     <div >
       <center>
         
               
         <button 
           className="btn btn-outline-success"
           onClick={resCount}> - </button>
-          {contador}
+          <p className="d-inline" id="contadorId">{contador}</p>
         <button 
           className="btn btn-outline-success btn-lock"
           onClick={sumCount}> + </button>
           <br />
         <button 
           className="btn btn-outline-success"
-          onClick={sumCount}> Agregar al carrito </button>
+          onClick={ handleOnAdd }> Agregar al carrito </button>
         
       </center>
      

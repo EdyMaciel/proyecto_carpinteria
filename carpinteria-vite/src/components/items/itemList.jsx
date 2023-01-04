@@ -1,20 +1,11 @@
-// import { Item } from "./items"
+import { Item } from "./items"
 
-// export const ItemList = (products) => {
-//     console.log('lista', {products})
+export const ItemList = ({products}) =>{
+    
+    return(
+    
+        products.map( product => <Item product={product} /> )
+      
+    )
 
-//     products.map(product => {Item(product)})
-
-//     return(
-        
-//         {products}
-        
-
-        
-
-
-
-
-
-
-// )}
+}

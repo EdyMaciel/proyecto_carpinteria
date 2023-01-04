@@ -18,8 +18,8 @@ function App() {
       <Routes>
 
 
-        <Route path='/Destacado/:categoriaId' element={<ItemListContainer texto="Parte de destacados" />} />
-        <Route path='/Inicio' element={<ItemListContainer texto="Parte de destacados" />} />
+        <Route path='/Destacado/:categoriaId' element={<ItemListContainer texto="Parte de destacados"  />} />
+        <Route path='/Inicio' element={<ItemListContainer texto="Parte de inicio" />} />
         <Route path='/:menuId' element={<ItemListContainer texto="Parte de destacados" />} />
         <Route path='/detail/:productoId' element={<ItemDetailContainer />} />
         <Route path='/cart' element={<CartContainer />} />

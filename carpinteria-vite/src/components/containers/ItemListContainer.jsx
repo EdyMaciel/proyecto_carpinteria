@@ -4,7 +4,9 @@ import { gFetch } from "../helpers/gFetch"
 import { useState } from "react"
 import { useEffect } from "react"
 import { Link, NavLink, useParams } from 'react-router-dom'
-import ItemCount from "../items/itemCount"
+
+
+import { ItemList } from "../items/itemList"
 // import ItemCount from "../items/itemCount"
 
 
@@ -42,20 +44,17 @@ const ItemListContainer = (props) => {
 
   }, [categoriaId])
 
-  console.log(categoriaId)
-  console.log(menuId)
-  
  
 
     return (
-
+      
       <>
-      <div className="center-block"  
-          style={{paddingTop: 150,
-                  paddingLeft: 50
-                  }} >
-
-        <TituloContainer greeting={props.texto}/>
+        <div className="center-block"  
+            style={{paddingTop: 150,
+                    paddingLeft: 50
+                    }} >
+                      
+          <TituloContainer greeting={props.texto}/>
           <div className="d-flex" style={{justifyContent: "center"}}>
             <NavLink className={ ( { isActive } )=> isActive ? ' btn btn-info btn-block' : 'btn  ' } to='/Destacado/BAÑO'>
             <button className="btn btn-info ">
@@ -76,62 +75,23 @@ const ItemListContainer = (props) => {
             </NavLink>
           </div>
 
-      { loading ? <h2 style={{color: "white",
-                              margin: "0 0 auto"}}>Cargando productos ...</h2> : 
+          { loading ? <h2 style={{color: "white",
+                                  margin: "0 0 auto"}}>Cargando productos ...</h2> : 
 
 
-        
-      products.map(product => 
-                              <div 
-                                  style={{margin: "auto"}}
-                                  className='col-md-5'
-                                  key={product.id}
-                              
-                              >
-                                  <div className="card w-100 mt-5"
-                                      >
-                                    <div className="card-header d-flex"
-                                          style={{justifyContent:"center"}}>
-                                        {`${product.name} - ${product.categoria}`}
-                                    </div>
-                                    <div className="card-body d-flex"
-                                          style={{justifyContent:"space-between", alignItems:"center"}}>
-                                        <img src={product.foto} alt="" className="w-50" />
-                                        {product.price}
-                                    </div>
-                                    <div className="card-footer d-flex"
-                                          style={{justifyContent:"space-between", alignItems:"center"}}>
-                                      <Link to={`/detail/${product.id}`}>
-                                        <button className="btn btn-outline-success btn-block">
-                                          Detalle del producto
-                                        </button>
-                                      </Link>
-                                        
+            
 
-                                        <ItemCount />
-                                    </div>
-
-
-                                  </div>
-
-
-
-                              </div>
-      
-      
-      
-      
-      
-      
-      )}
+           <ItemList products={products} />
+           
+           }
     
-      <br />  
-      
         
-    
-      </div>
-
+          
       
+        </div>
+      
+
+     
       </>
     )
       

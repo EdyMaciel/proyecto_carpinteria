@@ -73,10 +73,10 @@ function Nav() {
              
           <div className="col-2 d-inline-block text-white ">
             <nav>
-              {/* <Link to='/cart'> */}
-                <ul>
-                  <li className='lista text-white justify-content-center'>
-                    <span>
+              <ul>
+                <li className='lista text-white justify-content-center'>
+                  <span>
+                    
                       <h2><CartWidget /></h2>
                       <span className="position-absolute 
                                       top-0 
@@ -87,11 +87,11 @@ function Nav() {
                                       bg-danger"
                                       
                                       id="badgeCarrito" >{contador}</span>
-                    </span>
                     
-                  </li>
-                </ul>
-              {/* </Link> */}
+                  </span>
+                    
+                </li>
+              </ul>
               
             </nav>
           </div>
@@ -100,8 +100,8 @@ function Nav() {
 
       </div>
           
-{/*       
-        <button 
+      
+        {/* <button 
         className="btn btn-outline-primary"
         onClick={resCount}> - </button>
         <button 
