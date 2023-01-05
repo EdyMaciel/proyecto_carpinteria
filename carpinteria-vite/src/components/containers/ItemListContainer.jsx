@@ -50,9 +50,7 @@ const ItemListContainer = (props) => {
       
       <>
         <div className="center-block"  
-            style={{paddingTop: 150,
-                    paddingLeft: 50
-                    }} >
+            style={{paddingTop: 150}} >
                       
           <TituloContainer greeting={props.texto}/>
           <div className="d-flex" style={{justifyContent: "center"}}>

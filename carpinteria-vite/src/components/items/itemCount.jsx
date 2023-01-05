@@ -11,23 +11,23 @@ const ItemCount = ( { stock=5, inicial=1, onAdd } ) => {
     const handleOnAdd = () => onAdd(contador)
 
     return(
-     <div >
-      <center>
+     <div className="row  d-flex justify-content-center row-cols-2 ">
+      
         
               
         <button 
-          className="btn btn-outline-success"
+          className="btn btn-sm  btn-outline-success col-2"
           onClick={resCount}> - </button>
-          <p className="d-inline" id="contadorId">{contador}</p>
+          <p className="d-inline d-flex justify-content-center col-2" id="contadorId">{contador}</p>
         <button 
-          className="btn btn-outline-success btn-lock"
+          className="btn btn-sm btn-outline-success col-2"
           onClick={sumCount}> + </button>
-          <br />
+          
         <button 
-          className="btn btn-outline-success"
+          className="btn btn-outline-success m-md-3 col-md-9 col-7 "
           onClick={ handleOnAdd }> Agregar al carrito </button>
         
-      </center>
+     
      
         
 

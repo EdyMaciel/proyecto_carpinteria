@@ -5,33 +5,38 @@ import ItemListContainer from './components/containers/ItemListContainer'
 import CartContainer from './components/containers/cartContainer'
 import Nav from './components/navBar/NavBar'
 import './App.css'
+import { CartContextProvider } from './context/CartContext'
 
 
 function App() {
  
 
   return (
-    <BrowserRouter>
+    <CartContextProvider>
 
-      <Nav />
+      <BrowserRouter>
+
+        <Nav />
+        
+        <Routes>
+
+
+          <Route path='/Destacado/:categoriaId' element={<ItemListContainer texto="Parte de destacados"  />} />
+          <Route path='/Inicio' element={<ItemListContainer texto="Parte de inicio" />} />
+          <Route path='/:menuId' element={<ItemListContainer texto="Parte de destacados" />} />
+          <Route path='/detail/:productoId' element={<ItemDetailContainer />} />
+          <Route path='/cart' element={<CartContainer />} />
+          
+          
+          
+          <Route path='*' element={<Navigate to='/Inicio' />} />
+
+        </Routes>
       
-      <Routes>
+      
+      </BrowserRouter>
 
-
-        <Route path='/Destacado/:categoriaId' element={<ItemListContainer texto="Parte de destacados"  />} />
-        <Route path='/Inicio' element={<ItemListContainer texto="Parte de inicio" />} />
-        <Route path='/:menuId' element={<ItemListContainer texto="Parte de destacados" />} />
-        <Route path='/detail/:productoId' element={<ItemDetailContainer />} />
-        <Route path='/cart' element={<CartContainer />} />
-        
-        
-        
-        <Route path='*' element={<Navigate to='/Inicio' />} />
-
-      </Routes>
-    
-    
-    </BrowserRouter>
+    </CartContextProvider >
     
  
 
